@@ -163,13 +163,30 @@ bot.command({
 `,
 	nonPrefixed: true
 });
+bot.command({
+	name: '<!@840883172963254283>',
+	code: `
+  $title[Biri beni mi çağırdı?]
+  $description[
+    Prefixim: -
+    Yardım komutum: -yardım
+    İstatistik komutum: -i
+    Davet komutum: -davet
+    Mevcut pingim: $botping ms
+    Tamtamına $serverCount sunucuya ve $allMembersCount kişiye hizmet ediyorum!]
+    $footer[Noibot'u kullanmaya başla!]
+    $color[B89AFF]
+`,
+	nonPrefixed: true
+});
 //etiket cevap bitiş
 
 // özel komut
 bot.command({
 	name: "konuaç",
 	code: `<@$authorID>, konu açılıyor...
-	$editIn[5s;<@472493318706692099> <@764185419939315744> <@$botOwnerID> <@851132728858116116> <@644579535018524694> BAKIN LAN İTLER $onlyForServers[864134606483881984;KTD gel it.]`
+	$editIn[5s;<@472493318706692099> <@764185419939315744> <@$botOwnerID> <@851132728858116116> <@644579535018524694> BAKIN LAN İTLER 
+        $onlyForServers[864134606483881984;821307138785017887;KTD gel it.]`
 });
 bot.command({
 	name: "31",
@@ -179,6 +196,7 @@ bot.command({
 bot.command({
 	name: "tiyon",
 	code: `Biri sahibimi çağırıyor!`
+        nonPrefixed: true
 })
 bot.command({
 	name: 'eval',
