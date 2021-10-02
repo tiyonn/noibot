@@ -195,7 +195,7 @@ bot.command({
 });
 bot.command({
 	name: "tiyon",
-	code: `Biri sahibimi çağırıyor!`
+	code: `Biri sahibimi çağırıyor!`,
         nonPrefixed: true
 })
 bot.command({
